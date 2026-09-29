@@ -1,66 +1,386 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+# 📚 BookStore
+
+### Aplikasi Pembelian Buku Berbasis Web
+
+<p>
+  Dibangun menggunakan <strong>Laravel 12</strong>, <strong>MySQL</strong>, <strong>Blade</strong>, dan <strong>Tailwind CSS</strong>.
 </p>
 
-## About Laravel
+<p>
+  <img src="https://img.shields.io/badge/Laravel-12-red?style=for-the-badge&logo=laravel" alt="Laravel 12">
+  <img src="https://img.shields.io/badge/PHP-8.3-blue?style=for-the-badge&logo=php" alt="PHP 8.3">
+  <img src="https://img.shields.io/badge/MySQL-Database-orange?style=for-the-badge&logo=mysql" alt="MySQL">
+  <img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwindcss" alt="Tailwind CSS">
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+</div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 📖 Tentang Project
 
-## Learning Laravel
+**BookStore** adalah aplikasi web pembelian buku yang dibuat untuk memudahkan pengguna dalam mencari, memilih, dan membeli buku secara online.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Aplikasi memiliki dua jenis pengguna:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+- **User**, yang dapat melihat katalog buku, menggunakan keranjang, checkout, melihat status pesanan, dan menghubungi admin.
+- **Admin**, yang dapat mengelola kategori, buku, user, pesanan, serta pesan dari pelanggan.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## ✨ Fitur Utama
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 👤 User
 
-### Premium Partners
+| Fitur | Keterangan |
+|---|---|
+| Register & Login | Membuat akun dan masuk ke sistem |
+| Katalog Buku | Melihat koleksi buku yang tersedia |
+| Pencarian Buku | Mencari buku berdasarkan informasi tertentu |
+| Detail Buku | Melihat informasi lengkap buku |
+| Keranjang | Menambahkan dan mengatur jumlah buku |
+| Checkout | Membuat pesanan |
+| Pesanan Saya | Melihat riwayat dan status pesanan |
+| Contact Admin | Mengirim pesan kepada admin |
+| Balasan Admin | Melihat balasan pesan dari admin |
+| Profile | Mengelola data akun |
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### 🛠️ Admin
 
-## Contributing
+| Fitur | Keterangan |
+|---|---|
+| Dashboard | Melihat ringkasan aktivitas aplikasi |
+| Kategori | CRUD kategori buku |
+| Buku | CRUD data buku dan upload cover |
+| User | Melihat data pengguna |
+| Pesanan | Melihat dan mengubah status pesanan |
+| Pesan | Membaca, membalas, dan menghapus pesan |
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+## 🧰 Teknologi
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<div align="center">
 
-## Security Vulnerabilities
+| Teknologi | Fungsi |
+|---|---|
+| Laravel 12 | Framework backend |
+| PHP 8.3 | Bahasa pemrograman |
+| MySQL | Database |
+| Blade | Template engine |
+| Laravel Breeze | Authentication |
+| Eloquent ORM | Interaksi database |
+| Tailwind CSS | Styling |
+| Alpine.js | Interaksi frontend |
+| Git & GitHub | Version control |
+| Laragon | Local development environment |
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+</div>
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🏗️ Arsitektur Aplikasi
+
+Project menggunakan pola **MVC (Model-View-Controller)**.
+
+```text
+User
+  │
+  ▼
+Route
+  │
+  ▼
+Controller
+  │
+  ├──────────────► View
+  │
+  ▼
+Model
+  │
+  ▼
+Database
+```
+
+### Model
+Digunakan untuk mengelola data dan berinteraksi dengan database menggunakan Eloquent ORM.
+
+```text
+app/Models/
+├── User.php
+├── Book.php
+├── Category.php
+├── Order.php
+├── OrderItem.php
+└── ContactMessage.php
+```
+
+### View
+Digunakan untuk menampilkan antarmuka aplikasi.
+
+```text
+resources/views/
+```
+
+### Controller
+Menangani logika aplikasi dan menjadi penghubung antara Model dan View.
+
+```text
+app/Http/Controllers/
+```
+
+### Route
+Mengatur URL dan request aplikasi.
+
+```text
+routes/web.php
+```
+
+---
+
+## 👥 Role dan Hak Akses
+
+| Role | Hak Akses |
+|---|---|
+| **Admin** | Mengelola kategori, buku, user, pesanan, dan pesan |
+| **User** | Melihat buku, menggunakan keranjang, checkout, melihat pesanan, dan menghubungi admin |
+
+Akses Admin dibatasi menggunakan middleware:
+
+```text
+app/Http/Middleware/AdminMiddleware.php
+```
+
+---
+
+## 🗄️ Database
+
+Aplikasi menggunakan **MySQL**.
+
+Data utama yang digunakan:
+
+```text
+users
+categories
+books
+orders
+order_items
+contact_messages
+```
+
+Struktur database dikelola melalui:
+
+```text
+database/migrations/
+```
+
+---
+
+## 🔄 Alur User
+
+```text
+Register / Login
+        │
+        ▼
+Dashboard User
+        │
+        ▼
+Katalog Buku
+        │
+        ▼
+Detail Buku
+        │
+        ▼
+Tambah ke Keranjang
+        │
+        ▼
+Keranjang
+        │
+        ▼
+Checkout
+        │
+        ▼
+Pesanan
+        │
+        ▼
+Status Pesanan
+```
+
+---
+
+## 🔄 Alur Admin
+
+```text
+Login Admin
+     │
+     ▼
+Dashboard Admin
+     │
+     ├── Kelola Kategori
+     ├── Kelola Buku
+     ├── Lihat User
+     ├── Kelola Pesanan
+     └── Kelola Pesan
+```
+
+---
+
+## 📁 Struktur Project
+
+```text
+bookstore/
+│
+├── app/
+│   ├── Http/
+│   │   ├── Controllers/
+│   │   │   ├── Admin/
+│   │   │   └── User/
+│   │   └── Middleware/
+│   │
+│   └── Models/
+│
+├── database/
+│   ├── migrations/
+│   └── seeders/
+│
+├── public/
+│
+├── resources/
+│   └── views/
+│       ├── admin/
+│       ├── user/
+│       ├── auth/
+│       ├── components/
+│       └── layouts/
+│
+├── routes/
+│   ├── web.php
+│   └── auth.php
+│
+├── storage/
+│
+├── artisan
+├── composer.json
+└── README.md
+```
+
+---
+
+## ⚙️ Instalasi
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/ellienie/Bookstore.git
+```
+
+### 2. Masuk ke Folder Project
+
+```bash
+cd Bookstore
+```
+
+### 3. Install Dependency
+
+```bash
+composer install
+```
+
+### 4. Copy Environment
+
+Windows PowerShell:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Atau copy manual:
+
+```text
+.env.example → .env
+```
+
+### 5. Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+### 6. Konfigurasi Database
+
+Ubah bagian database pada `.env`:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=bookstore
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### 7. Migration & Seeder
+
+```bash
+php artisan migrate --seed
+```
+
+### 8. Storage Link
+
+```bash
+php artisan storage:link
+```
+
+### 9. Jalankan Aplikasi
+
+```bash
+php artisan serve
+```
+
+Buka:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## 🔐 Keamanan
+
+Beberapa fitur keamanan yang digunakan:
+
+- Authentication
+- Password hashing
+- CSRF Protection
+- Middleware
+- Role-based access
+- Server-side validation
+- File upload validation
+- Environment configuration melalui `.env`
+
+> File `.env` tidak disimpan di repository karena dapat berisi konfigurasi yang sensitif.
+
+---
+
+## 📌 Repository
+
+<div align="center">
+
+### GitHub Repository
+
+**https://github.com/ellienie/Bookstore**
+
+</div>
+
+---
+
+## 👩‍💻 Developer
+
+<div align="center">
+
+**ellienie**
+
+BookStore dibuat sebagai project aplikasi web pembelian buku untuk kebutuhan praktik dan asesmen kompetensi pemrograman.
+
+</div>
