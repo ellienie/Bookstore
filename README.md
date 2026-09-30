@@ -359,8 +359,6 @@ Beberapa fitur keamanan yang digunakan:
 - File upload validation
 - Environment configuration melalui `.env`
 
-> File `.env` tidak disimpan di repository karena dapat berisi konfigurasi yang sensitif.
-
 ---
 
 ## 📌 Repository
